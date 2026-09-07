@@ -1,1 +1,2042 @@
-hello bryon!!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BlackForge Laser | Premium Metal Business Cards</title>
+
+<style>
+
+/* =========================================================
+   BLACKFORGE LASER
+   PREMIUM BUSINESS CARD WEBSITE
+   ========================================================= */
+
+:root {
+    --black: #050608;
+    --black2: #0a0d12;
+    --panel: #10151d;
+
+    --silver: #d8dce2;
+    --silver2: #9da5b1;
+    --white: #ffffff;
+
+    --blue: #00a8ff;
+    --cyan: #00e5ff;
+    --purple: #8b5cf6;
+    --pink: #ec4899;
+
+    --green: #22c55e;
+    --red: #ef4444;
+
+    --border: rgba(255,255,255,0.12);
+    --shadow: 0 25px 80px rgba(0,0,0,0.55);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:
+        radial-gradient(circle at 10% 10%, rgba(0,168,255,0.12), transparent 30%),
+        radial-gradient(circle at 90% 20%, rgba(139,92,246,0.12), transparent 30%),
+        var(--black);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050608;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--blue), var(--purple));
+    border-radius: 10px;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(5,6,8,0.82);
+    backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.navbar {
+    max-width: 1250px;
+    margin: auto;
+
+    height: 78px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 25px;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    background: linear-gradient(
+        90deg,
+        var(--silver),
+        var(--blue),
+        var(--purple)
+    );
+
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.25s;
+}
+
+.nav-links a:hover {
+    color: var(--cyan);
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+    min-height: 100vh;
+
+    max-width: 1250px;
+    margin: auto;
+
+    padding: 150px 25px 80px;
+
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.hero-tag {
+    color: var(--cyan);
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 7vw, 90px);
+    line-height: 0.95;
+
+    letter-spacing: -5px;
+
+    margin-bottom: 28px;
+}
+
+.gradient-text {
+    background: linear-gradient(
+        90deg,
+        white,
+        var(--silver),
+        var(--blue),
+        var(--purple)
+    );
+
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    color: #9ca3af;
+    font-size: 18px;
+    line-height: 1.7;
+
+    max-width: 600px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+.btn {
+    padding: 15px 23px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.25s;
+
+    display: inline-block;
+
+    cursor: pointer;
+
+    border: none;
+}
+
+.btn-primary {
+    color: black;
+
+    background: linear-gradient(
+        90deg,
+        var(--cyan),
+        var(--blue)
+    );
+
+    box-shadow:
+        0 0 30px rgba(0,168,255,0.25);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 0 45px rgba(0,168,255,0.45);
+}
+
+.btn-secondary {
+    color: white;
+
+    border: 1px solid #444;
+
+    background: #11151c;
+}
+
+.btn-secondary:hover {
+    border-color: var(--purple);
+}
+
+/* =========================================================
+   3D CARD
+   ========================================================= */
+
+.card-showcase {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.business-card {
+    width: 480px;
+    max-width: 100%;
+
+    aspect-ratio: 1.75;
+
+    border-radius: 17px;
+
+    padding: 35px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(255,255,255,0.14),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #080808,
+            #191b20,
+            #050505
+        );
+
+    border: 1px solid #858991;
+
+    box-shadow:
+        0 35px 80px rgba(0,0,0,0.8),
+        0 0 50px rgba(0,168,255,0.12);
+
+    transform: rotate(-5deg);
+
+    transition: 0.5s;
+}
+
+.business-card:hover {
+    transform: rotate(0deg) scale(1.04);
+}
+
+.card-shine {
+    position: absolute;
+
+    width: 250px;
+    height: 600px;
+
+    top: -200px;
+    left: -100px;
+
+    background: rgba(255,255,255,0.08);
+
+    transform: rotate(30deg);
+
+    pointer-events: none;
+}
+
+.card-logo {
+    position: relative;
+
+    font-size: 24px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+    color: var(--silver);
+}
+
+.card-line {
+    width: 70px;
+    height: 3px;
+
+    margin: 18px 0;
+
+    background: linear-gradient(
+        90deg,
+        var(--silver),
+        var(--blue)
+    );
+}
+
+.card-title {
+    color: #777;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.card-bottom {
+    position: absolute;
+
+    bottom: 30px;
+    left: 35px;
+    right: 35px;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: #aaa;
+
+    font-size: 12px;
+}
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+section {
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 100px 25px;
+}
+
+.section-label {
+    color: var(--blue);
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.section-title {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+.section-description {
+    color: #888;
+
+    max-width: 650px;
+
+    line-height: 1.7;
+
+    margin-bottom: 45px;
+}
+
+/* =========================================================
+   FEATURES
+   ========================================================= */
+
+.features {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.feature {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.06),
+            rgba(255,255,255,0.015)
+        );
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    transition: 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-7px);
+
+    border-color: var(--blue);
+
+    box-shadow:
+        0 20px 50px rgba(0,168,255,0.1);
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 13px;
+
+    display: grid;
+    place-items: center;
+
+    font-size: 22px;
+
+    margin-bottom: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,168,255,0.2),
+            rgba(139,92,246,0.2)
+        );
+}
+
+.feature h3 {
+    margin-bottom: 12px;
+}
+
+.feature p {
+    color: #888;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   PRICING
+   ========================================================= */
+
+.pricing {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 15px;
+}
+
+.price-card {
+    position: relative;
+
+    background: #0d1117;
+
+    border: 1px solid #252b35;
+
+    border-radius: 16px;
+
+    padding: 28px 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    text-align: center;
+}
+
+.price-card:hover,
+.price-card.selected {
+    border-color: var(--cyan);
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 50px rgba(0,229,255,0.12);
+}
+
+.price-card.popular {
+    border-color: var(--purple);
+}
+
+.popular-label {
+    position: absolute;
+
+    top: -12px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--purple),
+            var(--pink)
+        );
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+.quantity {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.cards-word {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 25px;
+    color: var(--silver);
+    font-weight: bold;
+}
+
+.per-card {
+    color: #666;
+    font-size: 11px;
+    margin-top: 7px;
+}
+
+/* =========================================================
+   ORDER BUILDER
+   ========================================================= */
+
+.builder {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 25px;
+}
+
+.panel {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.055),
+            rgba(255,255,255,0.015)
+        );
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    padding: 30px;
+}
+
+.panel h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+
+    color: #bbb;
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+
+    background: #07090d;
+
+    color: white;
+
+    border: 1px solid #303641;
+
+    border-radius: 9px;
+
+    padding: 13px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--blue);
+
+    box-shadow:
+        0 0 0 3px rgba(0,168,255,0.08);
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* =========================================================
+   FILE UPLOAD
+   ========================================================= */
+
+.upload-box {
+    border: 2px dashed #3b4350;
+
+    border-radius: 15px;
+
+    padding: 35px 20px;
+
+    text-align: center;
+
+    transition: 0.25s;
+
+    cursor: pointer;
+}
+
+.upload-box:hover {
+    border-color: var(--cyan);
+
+    background:
+        rgba(0,229,255,0.03);
+}
+
+.upload-icon {
+    font-size: 40px;
+
+    margin-bottom: 12px;
+}
+
+.upload-box strong {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.upload-box span {
+    color: #666;
+    font-size: 12px;
+}
+
+#designFile {
+    display: none;
+}
+
+/* =========================================================
+   LIVE PREVIEW
+   ========================================================= */
+
+.preview-area {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 420px;
+}
+
+.preview-card {
+    width: 430px;
+    max-width: 95%;
+
+    aspect-ratio: 1.75;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #030303,
+            #20242b,
+            #080808
+        );
+
+    border: 1px solid #aaa;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,0.7);
+
+    position: relative;
+}
+
+.preview-card h2 {
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+
+.preview-card .preview-role {
+    color: #777;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+}
+
+.preview-line {
+    width: 55px;
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            white,
+            var(--blue)
+        );
+
+    margin: 15px 0;
+}
+
+.preview-contact {
+    position: absolute;
+
+    bottom: 25px;
+
+    left: 30px;
+
+    right: 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #999;
+
+    font-size: 10px;
+}
+
+/* =========================================================
+   AI DESIGNER
+   ========================================================= */
+
+.ai-box {
+    margin-top: 25px;
+
+    padding: 25px;
+
+    border-radius: 16px;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(139,92,246,0.15),
+            transparent 40%
+        ),
+        #0d1017;
+
+    border: 1px solid #39314f;
+}
+
+.ai-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+.ai-badge {
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--purple),
+            var(--pink)
+        );
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+.ai-result {
+    display: none;
+
+    margin-top: 18px;
+
+    padding: 15px;
+
+    background: #080a0e;
+
+    border-radius: 10px;
+
+    color: #aaa;
+
+    line-height: 1.6;
+}
+
+/* =========================================================
+   ORDER SUMMARY
+   ========================================================= */
+
+.order-summary {
+    margin-top: 30px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,168,255,0.09),
+            rgba(139,92,246,0.09)
+        );
+
+    border: 1px solid #28354a;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.total-label {
+    color: #888;
+    font-size: 12px;
+}
+
+.total {
+    font-size: 35px;
+    font-weight: 900;
+
+    background:
+        linear-gradient(
+            90deg,
+            white,
+            var(--cyan)
+        );
+
+    -webkit-background-clip: text;
+
+    color: transparent;
+}
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-card {
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 50px;
+
+    border-radius: 25px;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(0,168,255,0.12),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            rgba(139,92,246,0.12),
+            transparent 40%
+        ),
+
+        #0c1016;
+
+    border: 1px solid #252d38;
+}
+
+.email {
+    display: inline-block;
+
+    margin: 20px 0;
+
+    color: var(--cyan);
+
+    font-size: 20px;
+
+    text-decoration: none;
+}
+
+.email:hover {
+    text-decoration: underline;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    border-top: 1px solid #1b2027;
+
+    padding: 40px 25px;
+
+    text-align: center;
+
+    color: #555;
+}
+
+.footer-logo {
+    color: #aaa;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media(max-width: 950px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .hero p {
+        margin: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .features {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pricing {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .builder {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 650px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        letter-spacing: -3px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .order-summary {
+        display: block;
+    }
+
+    .total {
+        margin-top: 10px;
+    }
+
+    section {
+        padding: 70px 18px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ======================================================
+     NAVIGATION
+====================================================== -->
+
+<header>
+
+<nav class="navbar">
+
+    <div class="logo">
+        BLACK<span>FORGE</span> LASER
+    </div>
+
+    <div class="nav-links">
+
+        <a href="#home">Home</a>
+
+        <a href="#features">Why Us</a>
+
+        <a href="#pricing">Pricing</a>
+
+        <a href="#designer">Designer</a>
+
+        <a href="#contact">Contact</a>
+
+    </div>
+
+</nav>
+
+</header>
+
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
+<main>
+
+<section class="hero" id="home">
+
+<div>
+
+    <div class="hero-tag">
+        PREMIUM LASER ENGRAVING
+    </div>
+
+    <h1>
+        YOUR BRAND.
+        <br>
+        <span class="gradient-text">
+            LASER ENGRAVED.
+        </span>
+    </h1>
+
+    <p>
+        Professional black metal business cards with
+        precision laser engraving. Designed to make your
+        business stand out from the first handshake.
+    </p>
+
+    <div class="hero-buttons">
+
+        <a
+            href="#designer"
+            class="btn btn-primary"
+        >
+            Design Your Cards
+        </a>
+
+        <a
+            href="#pricing"
+            class="btn btn-secondary"
+        >
+            View Pricing
+        </a>
+
+    </div>
+
+</div>
+
+
+<div class="card-showcase">
+
+    <div class="business-card">
+
+        <div class="card-shine"></div>
+
+        <div class="card-logo">
+            BLACKFORGE
+        </div>
+
+        <div class="card-line"></div>
+
+        <div class="card-title">
+            LASER ENGRAVING
+        </div>
+
+        <div class="card-bottom">
+
+            <span>
+                YOUR NAME
+            </span>
+
+            <span>
+                YOURBUSINESS.COM
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     FEATURES
+====================================================== -->
+
+<section id="features">
+
+    <div class="section-label">
+        WHY BLACKFORGE
+    </div>
+
+    <h2 class="section-title">
+        More than a business card.
+    </h2>
+
+    <p class="section-description">
+        Give customers something they actually remember.
+        Our metal cards combine a premium black finish
+        with crisp silver laser engraving.
+    </p>
+
+
+    <div class="features">
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                ⚡
+            </div>
+
+            <h3>
+                Precision Laser
+            </h3>
+
+            <p>
+                Sharp, detailed engraving designed to
+                produce clean lines, logos and text.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                ◈
+            </div>
+
+            <h3>
+                Premium Metal
+            </h3>
+
+            <p>
+                A professional metal-card appearance
+                that feels substantially different from
+                an ordinary paper business card.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                ✦
+            </div>
+
+            <h3>
+                Custom Designs
+            </h3>
+
+            <p>
+                Upload your own artwork or use our
+                built-in design concept generator.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     PRICING
+====================================================== -->
+
+<section id="pricing">
+
+    <div class="section-label">
+        SIMPLE PRICING
+    </div>
+
+    <h2 class="section-title">
+        Pick your quantity.
+    </h2>
+
+    <p class="section-description">
+        The more cards you order, the lower the price
+        per card becomes.
+    </p>
+
+
+    <div class="pricing">
+
+        <div class="price-card"
+             data-quantity="20"
+             data-price="25">
+
+            <div class="quantity">
+                20
+            </div>
+
+            <div class="cards-word">
+                CARDS
+            </div>
+
+            <div class="price">
+                $25
+            </div>
+
+            <div class="per-card">
+                $1.25 each
+            </div>
+
+        </div>
+
+
+        <div class="price-card"
+             data-quantity="50"
+             data-price="40">
+
+            <div class="quantity">
+                50
+            </div>
+
+            <div class="cards-word">
+                CARDS
+            </div>
+
+            <div class="price">
+                $40
+            </div>
+
+            <div class="per-card">
+                $0.80 each
+            </div>
+
+        </div>
+
+
+        <div class="price-card popular selected"
+             data-quantity="100"
+             data-price="60">
+
+            <div class="popular-label">
+                MOST POPULAR
+            </div>
+
+            <div class="quantity">
+                100
+            </div>
+
+            <div class="cards-word">
+                CARDS
+            </div>
+
+            <div class="price">
+                $60
+            </div>
+
+            <div class="per-card">
+                $0.60 each
+            </div>
+
+        </div>
+
+
+        <div class="price-card"
+             data-quantity="150"
+             data-price="80">
+
+            <div class="quantity">
+                150
+            </div>
+
+            <div class="cards-word">
+                CARDS
+            </div>
+
+            <div class="price">
+                $80
+            </div>
+
+            <div class="per-card">
+                $0.53 each
+            </div>
+
+        </div>
+
+
+        <div class="price-card"
+             data-quantity="200"
+             data-price="95">
+
+            <div class="quantity">
+                200
+            </div>
+
+            <div class="cards-word">
+                CARDS
+            </div>
+
+            <div class="price">
+                $95
+            </div>
+
+            <div class="per-card">
+                $0.48 each
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     DESIGNER
+====================================================== -->
+
+<section id="designer">
+
+    <div class="section-label">
+        CUSTOM DESIGNER
+    </div>
+
+    <h2 class="section-title">
+        Build your card.
+    </h2>
+
+    <p class="section-description">
+        Enter your details, upload your artwork and see
+        a live preview before submitting your enquiry.
+    </p>
+
+
+    <div class="builder">
+
+
+        <!-- LEFT PANEL -->
+
+        <div class="panel">
+
+            <h3>
+                Card information
+            </h3>
+
+
+            <div class="form-group">
+
+                <label>
+                    Business name
+                </label>
+
+                <input
+                    id="businessName"
+                    type="text"
+                    placeholder="Your Business"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Your name
+                </label>
+
+                <input
+                    id="yourName"
+                    type="text"
+                    placeholder="Your Name"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Email
+                </label>
+
+                <input
+                    id="yourEmail"
+                    type="email"
+                    placeholder="you@example.com"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Phone
+                </label>
+
+                <input
+                    id="yourPhone"
+                    type="text"
+                    placeholder="0400 000 000"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Website
+                </label>
+
+                <input
+                    id="yourWebsite"
+                    type="text"
+                    placeholder="www.yourbusiness.com"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Design notes
+                </label>
+
+                <textarea
+                    id="designNotes"
+                    placeholder="Describe how you want your card to look..."
+                ></textarea>
+
+            </div>
+
+
+            <!-- FILE UPLOAD -->
+
+            <label>
+                Upload your design
+            </label>
+
+            <label
+                class="upload-box"
+                for="designFile"
+            >
+
+                <div class="upload-icon">
+                    ↑
+                </div>
+
+                <strong>
+                    Click to upload your design
+                </strong>
+
+                <span id="fileName">
+                    PNG, JPG, PDF or SVG
+                </span>
+
+            </label>
+
+            <input
+                id="designFile"
+                type="file"
+                accept=".png,.jpg,.jpeg,.pdf,.svg"
+            >
+
+
+            <!-- AI DESIGNER -->
+
+            <div class="ai-box">
+
+                <div class="ai-header">
+
+                    <h3>
+                        AI Design Assistant
+                    </h3>
+
+                    <span class="ai-badge">
+                        DEMO AI
+                    </span>
+
+                </div>
+
+                <p style="color:#777;line-height:1.6;margin-bottom:15px">
+
+                    Don't have a design? Describe what you
+                    want and our demo designer will create
+                    a concept for you.
+
+                </p>
+
+
+                <input
+                    id="aiPrompt"
+                    placeholder="e.g. luxury, modern, gaming, construction..."
+                >
+
+                <button
+                    class="btn btn-primary"
+                    style="margin-top:12px"
+                    onclick="generateAI()"
+                >
+                    Generate Design
+                </button>
+
+
+                <div
+                    id="aiResult"
+                    class="ai-result"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT PANEL -->
+
+        <div class="panel">
+
+            <h3>
+                Live preview
+            </h3>
+
+
+            <div class="preview-area">
+
+                <div class="preview-card">
+
+                    <h2 id="previewBusiness">
+                        YOUR BUSINESS
+                    </h2>
+
+                    <div class="preview-line"></div>
+
+                    <div
+                        class="preview-role"
+                        id="previewName"
+                    >
+                        YOUR NAME
+                    </div>
+
+
+                    <div class="preview-contact">
+
+                        <span id="previewPhone">
+                            0400 000 000
+                        </span>
+
+                        <span id="previewEmail">
+                            EMAIL
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SUMMARY -->
+
+            <div class="order-summary">
+
+                <div>
+
+                    <div class="total-label">
+                        YOUR ORDER
+                    </div>
+
+                    <strong id="summaryQuantity">
+                        100 cards
+                    </strong>
+
+                    <div
+                        style="color:#777;margin-top:5px;font-size:12px"
+                    >
+                        Black metal + silver engraving
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <div class="total-label">
+                        TOTAL
+                    </div>
+
+                    <div
+                        class="total"
+                        id="totalPrice"
+                    >
+                        $60 AUD
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button
+                onclick="submitOrder()"
+                class="btn btn-primary"
+                style="width:100%;margin-top:20px"
+            >
+                Send Order Enquiry
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     CONTACT
+====================================================== -->
+
+<section
+    id="contact"
+    class="contact-section"
+>
+
+    <div class="contact-card">
+
+        <div class="section-label">
+            GET IN TOUCH
+        </div>
+
+        <h2 class="section-title">
+            Ready to make your mark?
+        </h2>
+
+        <p class="section-description"
+           style="margin:15px auto">
+
+            Send through your design or contact us about
+            getting your custom laser engraved cards made.
+
+        </p>
+
+
+        <a
+            class="email"
+            href="mailto:dukicb@victorycollege.com?subject=BlackForge%20Laser%20Business%20Card%20Enquiry"
+        >
+            dukicb@victorycollege.com
+        </a>
+
+
+        <br>
+
+
+        <a
+            class="btn btn-primary"
+            href="mailto:dukicb@victorycollege.com?subject=BlackForge%20Laser%20Business%20Card%20Enquiry"
+        >
+            Email Us
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+    <div class="footer-logo">
+        BLACKFORGE LASER
+    </div>
+
+    <p>
+        Premium laser engraved metal business cards.
+    </p>
+
+    <p style="margin-top:10px">
+        © 2026 BlackForge Laser
+    </p>
+
+</footer>
+
+
+<!-- ======================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script>
+
+/* =========================================================
+   PRICE SELECTION
+========================================================= */
+
+let selectedQuantity = 100;
+let selectedPrice = 60;
+
+const priceCards =
+    document.querySelectorAll(".price-card");
+
+priceCards.forEach(card => {
+
+    card.addEventListener("click", () => {
+
+        priceCards.forEach(c => {
+            c.classList.remove("selected");
+        });
+
+        card.classList.add("selected");
+
+        selectedQuantity =
+            Number(card.dataset.quantity);
+
+        selectedPrice =
+            Number(card.dataset.price);
+
+        updateOrder();
+
+    });
+
+});
+
+
+function updateOrder() {
+
+    document.getElementById(
+        "summaryQuantity"
+    ).textContent =
+        selectedQuantity + " cards";
+
+
+    document.getElementById(
+        "totalPrice"
+    ).textContent =
+        "$" + selectedPrice + " AUD";
+
+}
+
+
+/* =========================================================
+   LIVE PREVIEW
+========================================================= */
+
+const businessInput =
+    document.getElementById("businessName");
+
+const nameInput =
+    document.getElementById("yourName");
+
+const phoneInput =
+    document.getElementById("yourPhone");
+
+const emailInput =
+    document.getElementById("yourEmail");
+
+
+businessInput.addEventListener("input", () => {
+
+    document.getElementById(
+        "previewBusiness"
+    ).textContent =
+        businessInput.value ||
+        "YOUR BUSINESS";
+
+});
+
+
+nameInput.addEventListener("input", () => {
+
+    document.getElementById(
+        "previewName"
+    ).textContent =
+        nameInput.value ||
+        "YOUR NAME";
+
+});
+
+
+phoneInput.addEventListener("input", () => {
+
+    document.getElementById(
+        "previewPhone"
+    ).textContent =
+        phoneInput.value ||
+        "0400 000 000";
+
+});
+
+
+emailInput.addEventListener("input", () => {
+
+    document.getElementById(
+        "previewEmail"
+    ).textContent =
+        emailInput.value ||
+        "EMAIL";
+
+});
+
+
+/* =========================================================
+   FILE UPLOAD
+========================================================= */
+
+document
+.getElementById("designFile")
+.addEventListener("change", function() {
+
+    const file = this.files[0];
+
+    if (!file) {
+
+        document.getElementById(
+            "fileName"
+        ).textContent =
+            "PNG, JPG, PDF or SVG";
+
+        return;
+    }
+
+    document.getElementById(
+        "fileName"
+    ).textContent =
+        "Selected: " + file.name;
+
+});
+
+
+/* =========================================================
+   FAKE AI DESIGNER
+========================================================= */
+
+function generateAI() {
+
+    const prompt =
+        document.getElementById(
+            "aiPrompt"
+        ).value.trim();
+
+    const result =
+        document.getElementById(
+            "aiResult"
+        );
+
+
+    if (!prompt) {
+
+        result.style.display = "block";
+
+        result.textContent =
+            "Please describe the style you want first.";
+
+        return;
+    }
+
+
+    result.style.display = "block";
+
+    result.innerHTML =
+
+        "<strong style='color:white'>AI DESIGN CONCEPT</strong><br><br>" +
+
+        "Style: " + prompt + "<br><br>" +
+
+        "Concept: A premium matte-black metal business " +
+        "card featuring your logo and information " +
+        "engraved in a clean silver finish. " +
+
+        "The design uses strong spacing, minimal " +
+        "elements and a professional high-end look." +
+
+        "<br><br>" +
+
+        "<span style='color:#00e5ff'>" +
+        "✓ Concept generated successfully" +
+        "</span>";
+
+}
+
+
+/* =========================================================
+   ORDER EMAIL
+========================================================= */
+
+function submitOrder() {
+
+    const business =
+        document.getElementById(
+            "businessName"
+        ).value;
+
+    const name =
+        document.getElementById(
+            "yourName"
+        ).value;
+
+    const email =
+        document.getElementById(
+            "yourEmail"
+        ).value;
+
+    const phone =
+        document.getElementById(
+            "yourPhone"
+        ).value;
+
+    const website =
+        document.getElementById(
+            "yourWebsite"
+        ).value;
+
+    const notes =
+        document.getElementById(
+            "designNotes"
+        ).value;
+
+
+    const subject =
+        "BlackForge Laser Business Card Order";
+
+
+    const body =
+
+        "BUSINESS CARD ORDER" +
+        "\n\n" +
+
+        "Business: " +
+        business +
+
+        "\nName: " +
+        name +
+
+        "\nEmail: " +
+        email +
+
+        "\nPhone: " +
+        phone +
+
+        "\nWebsite: " +
+        website +
+
+        "\n\nQuantity: " +
+        selectedQuantity +
+
+        " cards\nPrice: $" +
+        selectedPrice +
+
+        " AUD\n\nDesign notes:\n" +
+        notes;
+
+
+    window.location.href =
+        "mailto:dukicb@victorycollege.com" +
+
+        "?subject=" +
+        encodeURIComponent(subject) +
+
+        "&body=" +
+        encodeURIComponent(body);
+
+}
+
+
+/* =========================================================
+   INITIALISE
+========================================================= */
+
+updateOrder();
+
+</script>
+
+</body>
+</html>
